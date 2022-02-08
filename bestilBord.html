@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bestilbord.css">
+  <title>Bestil bord</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Menubar -->
+    <img id="bar" src="images/bar.jpg" alt="">
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="Et billede af Alice's logo"></a>
+
+    <nav>
+      <div id="burger">
+        <img id="ikon" src="images/ikon.png" alt="">
+        <img id="ikon2" src="images/x.png" alt="">
+      </div>
+      <ul id="showBrg">
+        <a href="index.html">
+          <li class="menupunkt">Menukort</li>
+        </a>
+        <a href="index.html">
+          <li class="menupunkt">Reserver bord</li>
+        </a>
+        <a href="index.html">
+          <li class="menupunkt">Arrangementer</li>
+        </a>
+        <a href="index.html">
+          <li class="menupunkt">Om os</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <img id="form" src="images/bestilbord.png" alt="bestil bord">
+
+  <form action="action.html">
+    <fieldset id="navn">
+      <legend>Indtast navn og e-mail</legend>
+      Navn: <input id="ditnavn" type="text" name="Name" value="">
+      E-mail: <input id="dinemail" type="text" name="E-mail" value="">
+
+      <button class="knap" id="btn1" style="vertical-align:middle" type="button"><span>Næste</span>
+    </fieldset>
+
+    <fieldset id="radio">
+      <legend>Hvor mange skal sidde ved bordet?</legend>
+      <!--- radio buttons (skal have samme navn)--->
+      <select id="antal" name="antal">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select>
+
+      <button class="knap" id="btn2" style="vertical-align:middle" type="button"><span>Næste</span>
+    </fieldset>
+
+    <fieldset id="check">
+      <legend>Er nogle af følgende ting gældende?</legend>
+      <input type="checkbox" id="baby" name="baby" value="baby">
+      <label for="baby">Vi skal bruge en højstol</label><br>
+      <input type="checkbox" id="allergier" name="allergier" value="allergier">
+      <label for="vehicle2">Vi har allergier</label><br>
+      <input type="checkbox" id="fødselsdag" name="fødselsdag" value="fødselsdag">
+      <label for="vehicle3">Det er en fødselsdag</label>
+
+      <button class="knap" id="btn3" style="vertical-align:middle" type="button"><span>Næste</span>
+    </fieldset>
+
+    <fieldset id="lastField">
+      <legend>Tak for dine svar</legend>
+      <input type="submit" value="Bestil bord">
+    </fieldset>
+  </form>
+
+  <!-- scripts -->
+  <script src="js/bestilbord.js"></script>
+
+</body>
+
+</html>
